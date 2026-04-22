@@ -4,8 +4,8 @@ on: [push]
 
 jobs:
   MSG:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Dizer Olá
-      run: echo "Olá, está funcionando o pipeline"
+        run: echo "Olá, está funcionando o pipeline"
   
