@@ -7,13 +7,14 @@ jobs:
   Python:
     runs-on: ubuntu-latest
     steps:
+
       - name: Setup Python
-       uses: actions/setup-python@v6.2.0
+        uses: actions/setup-python@v6.2.0
 
-      - name: obter o código (checkout)
-      uses: actions/checkout@v4
+      - name: Obter o código (checkout)
+        uses: actions/checkout@v4
 
-      -name: Executar o código
-      run: |
-        pwd
-        python hello.py
+      - name: Executar o código
+        run: |
+          pwd
+          python hello.py
